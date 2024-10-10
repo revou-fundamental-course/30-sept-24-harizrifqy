@@ -1,11 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mengatur viewport untuk responsivitas -->
+    <title>Konversi Suhu</title> <!-- Judul halaman -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Menghubungkan file CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <p>hhhh</p>
+
+    <header>
+        <h1>Konversi Suhu</h1> <!-- Judul utama aplikasi -->
+    </header>
+    
+    <main>
+
+        <form class="top"> <!-- Form untuk input suhu -->
+            <fieldset>
+                <legend>Input Suhu</legend>
+                
+                <label for="temperature">Masukkan suhu:</label> <!-- Label untuk input suhu -->
+                <input type="number" id="temperature" placeholder="Suhu"> <!-- Input untuk suhu -->
+
+                <div>
+                    <label for="scale">Pilih skala:</label> <!-- Label untuk memilih skala -->
+                    <select id="scale">
+                        <option value="celsius">Celsius (&deg;C)</option> <!-- Pilihan untuk Celsius -->
+                        <option value="fahrenheit">Fahrenheit (&deg;F)</option> <!-- Pilihan untuk Fahrenheit -->
+                    </select>
+                </div>
+
+                <div>
+                    <button type="button" id="convertButton">Konversi</button> <!-- Tombol untuk melakukan konversi -->
+                    <button type="button" id="resetButton">Reset</button> <!-- Tombol untuk mereset input -->
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Hasil Konversi</legend>
+                
+                <label for="result">Hasil Konversi:</label> <!-- Label untuk hasil konversi -->
+                <input type="number" id="result" placeholder="Hasil" readonly> <!-- Input untuk hasil konversi (readonly) -->
+            </fieldset>
+
+            <fieldset>
+                <legend>Cara Mengkonversikan</legend>
+                
+                <label for="conversionMethod">Rumus konversi:</label> <!-- Label untuk rumus konversi -->
+                <input type="text" id="conversionMethod" placeholder="Rumus konversi" readonly> <!-- Input untuk menampilkan rumus (readonly) -->
+            </fieldset>
+        </form>
+
+        <section>
+            <h2>Cara Konversi Suhu</h2> <!-- Judul untuk bagian cara konversi -->
+            <article>
+                <br>
+                <h3>Dari Celsius (&deg;C) ke Fahrenheit (&deg;F)</h3> <!-- Sub-judul untuk konversi Celsius ke Fahrenheit -->
+                <p>Suhu dalam derajat Fahrenheit (&deg;F) sama dengan suhu dalam derajat Celsius (&deg;C) dikalikan dengan 9/5 ditambah 32.</p>
+                <p>
+                    S<sub>(&deg;F)</sub> = ( S<sub>(&deg;C)</sub> x 9/5 ) + 32 <br> 
+                    atau <br>
+                    S<sub>(&deg;F)</sub> = ( S<sub>(&deg;C)</sub> x 1.8 ) + 32 
+                </p>
+            </article>
+            <br>
+            <article>
+                <h3>Dari Fahrenheit (&deg;F) ke Celsius (&deg;C)</h3> <!-- Sub-judul untuk konversi Fahrenheit ke Celsius -->
+                <p>Suhu dalam derajat Celsius (&deg;C) sama dengan suhu dalam derajat Fahrenheit (&deg;F) dikurangi 32, kemudian dikalikan dengan 5/9.</p>
+                <p>
+                    S<sub>(&deg;C)</sub> = ( S<sub>(&deg;F)</sub> - 32 ) x 5/9
+                </p>
+            </article>
+        </section>
+        
+
+        <footer>
+            <p class="footer"> Made by Rifqy@2024</p> <!-- informasi pembuat -->
+        </footer>
+        
+    </main>
+    
+    <script src="js/script.js"></script> <!-- Menghubungkan file JavaScript -->
+
 </body>
 </html>

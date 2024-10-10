@@ -1,1 +1,102 @@
-!
+/* Reset beberapa default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Mengatur ukuran elemen agar lebih mudah diatur */
+}
+
+/* Styling untuk body */
+body {
+        font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+    background-color: #f0f4f8; 
+    color: #333;
+    line-height: 1.6; 
+}
+
+/* Styling untuk header */
+header {
+    background: #4a90e2;
+    color: #fff; 
+    padding: 15px 20px; 
+    text-align: center; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+/* Styling untuk main section */
+main {
+    max-width: 600px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    background: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); 
+}
+
+/* Styling untuk fieldset */
+fieldset {
+    border: 1px solid #ddd;
+    margin-bottom: 20px; 
+    padding: 15px; 
+    border-radius: 5px; 
+}
+
+/* Styling untuk legend */
+legend {
+    font-weight: bold; 
+    padding: 0 10px; 
+}
+
+/* Styling untuk label */
+label {
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+/* Styling untuk input */
+input[type="number"],
+input[type="text"],
+select {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 1em; 
+}
+
+/* Styling untuk tombol */
+button {
+    padding: 10px 15px; 
+    margin-right: 10px; 
+    background: #4a90e2; 
+    color: #fff; 
+    border: none; 
+    border-radius: 4px;
+    cursor: pointer; 
+    transition: background 0.3s ease; 
+}
+
+/* Hover effect untuk tombol */
+button:hover {
+    background: #357ab8; 
+}
+
+/* Styling untuk footer */
+footer {
+    text-align: center;
+    margin-top: 70px; 
+    font-size: 0.9em; 
+    color: #777; 
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    main {
+        padding: 10px; 
+    }
+
+    button {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+}
